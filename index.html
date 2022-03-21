@@ -20,8 +20,9 @@
   </head>
   <body>
     <header>
-      <img src="twitter-logo.png" alt="twitter-logo" class="logo" />
-      <h1><span class="twitter-title">Twitter</span> Character Counter</h1>
+      <img src="images/twitter-logo.png" alt="twitter-logo" class="logo" />
+      <h1><span class="twitter-title">Twitter</span> Character Counter<span class="twitter-title"> (JS version)</span></h1>
+      
     </header>
     <main>
       <div class="main-tweet-header">
@@ -29,8 +30,8 @@
           <i class="fa-thin fa-xmark cross"></i>
         </div>
 
-        <div class="main-tweet">
-          <img src="close.png" alt="close-sign-image" />
+        <div class="main-tweet" contenteditable="true">
+          <img src="images/close.png" alt="close-sign-image" />
           <input
             type="text"
             class="tweet-body"
@@ -40,30 +41,33 @@
         </div>
 
         <div class="everyone">
-          <img src="earth.png" alt="earth-image" class="earth" />
+          <img src="images/earth.png" alt="earth-image" class="earth" />
           <h3 class="everyoneh3">Everyone can reply</h3>
         </div>
 
         <hr />
 
         <div class="add-on">
-          <span class="gallery"><abbr title="gallery"><img src="gallery.png" alt="" /></abbr></span>
-          <span class="gif"><abbr title="GIFs"><img src="gif.png" alt="" /></abbr></span>
-          <span class="poll"><abbr title="Poll"><img src="statistics.png" alt="" /></abbr></span>
-          <span class="emoji"><abbr title="Emoji"><img src="happy.png" alt="" /></abbr></span>
-          <span class="schedule"><abbr title="Schedule"><img src="event.png" alt="" /></abbr></span>
-          <span class="location"><abbr title="Location"><img src="location.png" alt="" /></abbr></span>
-          <span class="char-len-140" id="numshow"><span class="char-len">| </span><abbr title="140 characters">140</abbr></span>
+          <span class="gallery"><abbr title="gallery"><img src="images/gallery.png" alt="" /></abbr></span>
+          <span class="gif"><abbr title="GIFs"><img src="images/gif.png" alt="" /></abbr></span>
+          <span class="poll"><abbr title="Poll"><img src="images/statistics.png" alt="" /></abbr></span>
+          <span class="emoji"><abbr title="Emoji"><img src="images/happy.png" alt="" /></abbr></span>
+          <span class="schedule"><abbr title="Schedule"><img src="images/event.png" alt="" /></abbr></span>
+          <span class="location"><abbr title="Location"><img src="images/location.png" alt="" /></abbr></span>
+          <span class="char-len-140" id="numShow"><span class="char-len">| </span><abbr title="140 characters">140</abbr></span>
           <span class="tweet-btn">
-            <button class="btn">Tweet</button>
+            <button onclick="tweetCheck()" class="btn">Slice it!</button>
           </span>
         </div>
       </div>
     </main>
 
     <footer class="footer">
+      <p>
+        Copy Paste your thoughts and it will give you an extract version of your thoughts which you can tweet. 
+       </p>
         <div>
-            ©️ Twitter Character Counter
+            ©️ Twitter Character 
         </div>
     </footer>
   </body>

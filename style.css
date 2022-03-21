@@ -45,16 +45,18 @@ div img {
     padding: 1rem;
 }
 
-
-
-
+.cross {
+    position: absolute;
+    top: auto;
+    left: 80rem;
+}
 
 .main-tweet-header {
     border: 5px solid black;
     margin: auto auto;
     padding: 2%;
     width: 50%;
-    border-radius: 50px;
+    border-radius: 110px;
     border-color: rgb(29, 155, 240);
     padding-left: 0;
 }
@@ -63,12 +65,14 @@ div img {
 .main-tweet input {
     margin-left: 0;
     padding-left: 50px;
-    width: 50rem;
-    height: 15rem;
+    width: 25rem;
+    height: 10rem;
     border-style: none;
+    border-radius: 50px;
     outline-style: none;
     font-size: 25px;
 }
+
 
 .everyone {
     margin-top: 5rem;
@@ -140,6 +144,15 @@ div img {
 .footer {
     background-color: rgb(29, 155, 240);
     height: 5rem;
+    text-align: center;
+    color: white;
+    margin: 100px;
+    
+}
+
+.footer p{
+    padding: 1rem;
+    font-size: larger;
 }
 
 footer div {
